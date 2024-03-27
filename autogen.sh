@@ -25,5 +25,5 @@ test -z "$srcdir" && srcdir=.
 )
 
 if [ -z "$NOCONFIGURE" ]; then
-  $srcdir/configure "$@"
+  $srcdir/configure CC=clang CXX=clang++ "$@"
 fi
